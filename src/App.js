@@ -44,7 +44,7 @@ function App() {
 
   useEffect(() => {
     setPeople(people.sort(() => Math.random() - 0.5))
-  }, [current]);
+  }, [current, people]);
 
   function handleClick(e){
     if(clicked.includes(e.target.name)){
@@ -62,9 +62,12 @@ function App() {
 
   return (
   <div id="gameWrapper">
-    <div id="scoreBoard">
-      <p>{`Current score: ${current}`}</p>
-      <p>{`Best score: ${best}`}</p>
+    <div id="headWrapper">
+      <h1>Memory card game</h1>
+      <div id="scoreBoard">
+        <p className='score'>{`Current: ${current}`}</p>
+        <p className='score'>{`Best: ${best}`}</p>
+      </div>
     </div>
     <div id="cardTable">
       {people.map(card => {

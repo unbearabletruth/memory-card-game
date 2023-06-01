@@ -1,6 +1,61 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #3f3f46;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c7d2fe;
+}
+
+#headWrapper{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+h1{
+    font-size: 40px;
+}
+
+#gameWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#scoreBoard{
+    display: flex;
+    font-size: 34px;
+    gap: 10px;
+}
+
 #cardTable{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
     flex-wrap: wrap;
     gap: 30px;
-    width: 1200px;
+}
+
+.score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 75px;
+    border: 1px solid #0ea5e9;
+    border-radius: 5px;
+    background-color: white;
+    font-weight: bold;
 }
