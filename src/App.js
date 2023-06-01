@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import './assets/styles/App.css';
+import Card from './card';
+import Darwin from './assets/images/Darwin.jpg'
+import Dosotevsky from './assets/images/Dostoevky.jpg'
+import Feynman from './assets/images/Feynman.jpg'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <div id="gameWrapper">
+    <div id="scoreBoard">
+      <p>current</p>
+      <p>best</p>
     </div>
-  );
+    <div id="cardTable">
+      <Card image={Darwin} text="Charles Darwin"/>
+      <Card image={Dosotevsky} text="Fyodor Dostoevsky"/>
+      <Card image={Feynman} text="Richard Feynman"/>
+    </div>
+  </div>)
 }
 
 export default App;
