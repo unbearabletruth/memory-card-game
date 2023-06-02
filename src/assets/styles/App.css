@@ -15,14 +15,23 @@ body{
 
 #headWrapper{
     display: flex;
-    width: 60%;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
+    background-color: #52525b;
+    color: white;
+    padding: 15px 50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 h1{
     font-size: 40px;
+    color: #fff7ed;
+}
+
+#status{
+    color: #fff7ed;
+    font-size: 22px;
 }
 
 #gameWrapper{
@@ -35,7 +44,7 @@ h1{
 
 #scoreBoard{
     display: flex;
-    font-size: 34px;
+    font-size: 24px;
     gap: 10px;
 }
 
@@ -52,10 +61,6 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 75px;
-    border: 1px solid #0ea5e9;
-    border-radius: 5px;
-    background-color: white;
+    color:#c7d2fe;
     font-weight: bold;
 }

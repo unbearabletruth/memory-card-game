@@ -6,7 +6,7 @@ import images from './assets/images/exportAll.js'
 
 function App() {
 
-  let [people, setPeople] = useState([
+  const [people, setPeople] = useState([
     {image: images["Darwin.jpg"], name:"Charles Darwin", id: uniqid()},
     {image: images["Dostoevsky.jpg"], name: "Fyodor Dostoevsky", id: uniqid()},
     {image: images["Feynman.jpg"], name: "Richard Feynman", id: uniqid()},
@@ -23,7 +23,6 @@ function App() {
     {image: images["Frankl.jpg"], name: "Victor Frankl", id: uniqid()},
     {image: images["Lowry.jpg"], name: "Lois Lowry", id: uniqid()}
   ])
-
   const [current, setCurrent] = useState(0);
   const [best, setBest] = useState(0);
   const [clicked, setClicked] = useState([]);
@@ -33,16 +32,12 @@ function App() {
   }, [current, people]);
 
   function handleClick(e){
-    console.log(e.target.id)
-    console.log(people)
     if(clicked.includes(e.target.id)){
-      console.log(clicked)
       setCurrent(0);
-      setClicked([])
-      if (best >= current){
-        return
+      setClicked([]);
+      if (best < current){
+        setBest(current) 
       } 
-      setBest(current) 
     } else {
       setCurrent(current + 1)
       setClicked(clicked.concat(e.target.id))
@@ -53,6 +48,7 @@ function App() {
   <div id="gameWrapper">
     <div id="headWrapper">
       <h1>Memory card game</h1>
+      <p id="status">Get points by clicking on a card, but don't click twice!</p>
       <div id="scoreBoard">
         <p className='score'>{`Current: ${current}`}</p>
         <p className='score'>{`Best: ${best}`}</p>
