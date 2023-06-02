@@ -33,7 +33,10 @@ function App() {
   }, [current, people]);
 
   function handleClick(e){
-    if(clicked.includes(e.target.name)){
+    console.log(e.target.id)
+    console.log(people)
+    if(clicked.includes(e.target.id)){
+      console.log(clicked)
       setCurrent(0);
       setClicked([])
       if (best >= current){
@@ -42,7 +45,7 @@ function App() {
       setBest(current) 
     } else {
       setCurrent(current + 1)
-      setClicked(clicked.concat(e.target.name))
+      setClicked(clicked.concat(e.target.id))
     }
   }
 

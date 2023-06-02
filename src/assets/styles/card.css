@@ -1,4 +1,4 @@
-#card{
+.card{
     width: 200px;
     height: 225px;
     background-color: #fff7ed;
@@ -12,13 +12,13 @@
     cursor: pointer;
 }
 
-#card:hover{
+.card:hover{
     box-shadow:rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .cardImage{
-    width: 110px;
-    height: auto;
+    width: auto;
+    height: 150px;
     border-radius: 10px;
     border: 1px solid #0ea5e9;
 }
