@@ -1,12 +1,12 @@
 import './assets/styles/App.css';
 import uniqid from "uniqid";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Card from './card';
 import images from './assets/images/exportAll.js'
 
 function App() {
 
-  const [people, setPeople] = useState([
+  const people = useRef([
     {image: images["Darwin.jpg"], name:"Charles Darwin", id: uniqid()},
     {image: images["Dostoevsky.jpg"], name: "Fyodor Dostoevsky", id: uniqid()},
     {image: images["Feynman.jpg"], name: "Richard Feynman", id: uniqid()},
@@ -28,8 +28,8 @@ function App() {
   const [clicked, setClicked] = useState([]);
 
   useEffect(() => {
-    setPeople(people.sort(() => Math.random() - 0.5))
-  }, [current, people]);
+    people.current.sort(() => Math.random() - 0.5)
+  }, [current]);
 
   function handleClick(e){
     if(clicked.includes(e.target.id)){
@@ -55,7 +55,7 @@ function App() {
       </div>
     </div>
     <div id="cardTable">
-      {people.map(card => {
+      {people.current.map(card => {
         return <Card key={card.id} image={card.image} name={card.name} onClick={handleClick}/>
       })}  
     </div>
