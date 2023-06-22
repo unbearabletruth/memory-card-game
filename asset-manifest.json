@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/memory-card-game/static/css/main.d62ff41b.css",
+    "main.js": "/memory-card-game/static/js/main.880ebfe5.js",
+    "static/js/787.079dd69e.chunk.js": "/memory-card-game/static/js/787.079dd69e.chunk.js",
+    "static/media/Weinstein.jpg": "/memory-card-game/static/media/Weinstein.cce7f43ef1ebe4c141b3.jpg",
+    "static/media/Darwin.jpg": "/memory-card-game/static/media/Darwin.a93538f1c33cec5045f5.jpg",
+    "static/media/Orwell.jpg": "/memory-card-game/static/media/Orwell.a12c36579a7162213a4c.jpg",
+    "static/media/Solzhenitsyn.jpg": "/memory-card-game/static/media/Solzhenitsyn.dbc84f5ce93fdc1b4705.jpg",
+    "static/media/Rowling.jpg": "/memory-card-game/static/media/Rowling.c22616f897f60608da5e.jpg",
+    "static/media/Sapolsky.jpg": "/memory-card-game/static/media/Sapolsky.0ab07acc1e012746af67.jpg",
+    "static/media/Dawkins.jpg": "/memory-card-game/static/media/Dawkins.354c32dbde6312cd591a.jpg",
+    "static/media/Dostoevsky.jpg": "/memory-card-game/static/media/Dostoevsky.06026a800e4f14c3b016.jpg",
+    "static/media/Lowry.jpg": "/memory-card-game/static/media/Lowry.627a687f89819071e282.jpg",
+    "static/media/de_Waal.jpg": "/memory-card-game/static/media/de_Waal.6c2b4670c934e73ab220.jpg",
+    "static/media/Frankl.jpg": "/memory-card-game/static/media/Frankl.4cef0c271214ca1325e9.jpg",
+    "static/media/Frank.jpg": "/memory-card-game/static/media/Frank.9562b138c960801a3233.jpg",
+    "static/media/Feynman.jpg": "/memory-card-game/static/media/Feynman.f9b873f4dd4fc38510d3.jpg",
+    "static/media/Blaffer_Hrdy.jpg": "/memory-card-game/static/media/Blaffer_Hrdy.f431efafa3869514b69e.jpg",
+    "static/media/Heying.jpg": "/memory-card-game/static/media/Heying.704940d534e7585baaf5.jpg",
+    "index.html": "/memory-card-game/index.html",
+    "main.d62ff41b.css.map": "/memory-card-game/static/css/main.d62ff41b.css.map",
+    "main.880ebfe5.js.map": "/memory-card-game/static/js/main.880ebfe5.js.map",
+    "787.079dd69e.chunk.js.map": "/memory-card-game/static/js/787.079dd69e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d62ff41b.css",
+    "static/js/main.880ebfe5.js"
+  ]
+}
